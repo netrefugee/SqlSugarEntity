@@ -16,7 +16,7 @@ namespace SqlSugarEntity.Models
             {
                 ConnectionString = configuration.GetConnectionString("DefaultConnection"),
                 IsAutoCloseConnection = true,
-                DbType = DbType.MySql
+                DbType = DbType.SqlServer
             });
         }
         public SqlSugarClient Client { get { return sqlSugarClient; } }
